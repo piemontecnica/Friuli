@@ -1951,13 +1951,13 @@
 </script>
 <style>
   :root{
-    --bg:#0d3346;
-    --panel:#124a66;
-    --panel2:#165576;
-    --border:#2a6789;
-    --text:#eaf2f7;
-    --muted:#9fc0d3;
-    --accent:#5cb3d9;
+    --bg:#006a6a;
+    --panel:#0e7676;
+    --panel2:#1b807f;
+    --border:#408281;
+    --text:#eef5f4;
+    --muted:#b3cbcb;
+    --accent:#b3cbcb;
     --c1228:#1f6b3a;
     --c1232:#4fe0d0;
     --c1233:#c9a0ff;
@@ -1999,7 +1999,7 @@
     font-style:italic;
     margin:0;
     letter-spacing:0.2px;
-    color:#bfe3ff;
+    color:#b3cbcb;
   }
   header .subtitle{
     font-size:11px;
@@ -2050,7 +2050,7 @@
     user-select:none;
   }
   .chip:hover{ border-color:var(--accent); }
-  .chip.active{ background:#20415c; border-color:var(--accent); }
+  .chip.active{ background:#2f7574; border-color:var(--accent); }
   .chip .dot{ width:10px; height:10px; border-radius:50%; flex:0 0 auto; }
   .chip .label{ flex:1; }
   .chip .count{ color:var(--muted); font-size:12px; }
@@ -2064,7 +2064,7 @@
     transition:background 0.15s, border-color 0.15s, opacity 0.15s;
   }
   .chip-sm:hover{ border-color:var(--accent); }
-  .chip-sm.active{ background:#20415c; border-color:var(--accent); }
+  .chip-sm.active{ background:#2f7574; border-color:var(--accent); }
   .chip-sm:not(.active){ opacity:0.45; }
   .chip-sm .csm-count{ color:var(--muted); font-size:10px; font-weight:400; margin-top:1px; }
   .stat-row{
@@ -2093,7 +2093,7 @@
   }
   .basemap-toggle button.active{
     background:var(--accent);
-    color:#08131c;
+    color:#063a3a;
     font-weight:600;
   }
   .reset-btn{
@@ -2156,7 +2156,7 @@
     filter: drop-shadow(0 1px 3px rgba(0,0,0,0.6));
   }
   #northArrow:active{ cursor:grabbing; }
-  #northArrow:hover circle{ stroke:#5cb3d9; }
+  #northArrow:hover circle{ stroke:#b3cbcb; }
   .rotate-controls{ display:flex; align-items:center; gap:8px; }
   .rotate-controls input[type=range]{ flex:1; }
   .rotate-icon-btn{
@@ -2185,7 +2185,7 @@
   tbody td{ padding:9px 8px; border-bottom:1px solid var(--border); }
   tbody tr{ cursor:pointer; transition:background 0.1s; }
   tbody tr:hover{ background:var(--panel2); }
-  tbody tr.selected{ background:#20415c; }
+  tbody tr.selected{ background:#2f7574; }
   .type-dot{ display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:6px; }
   .leaflet-popup-content-wrapper{ background:var(--panel2); color:var(--text); border-radius:8px; }
   .leaflet-popup-tip{ background:var(--panel2); }
@@ -2240,7 +2240,7 @@
   .switch input{ opacity:0; width:0; height:0; }
   .switch .slider{
     position:absolute; cursor:pointer; top:0;left:0;right:0;bottom:0;
-    background:#33475a; border-radius:18px; transition:0.15s;
+    background:#3a6b6a; border-radius:18px; transition:0.15s;
   }
   .switch .slider:before{
     position:absolute; content:""; height:14px;width:14px;
@@ -2263,7 +2263,7 @@
     font-family:inherit;
   }
   .basemap-ctrl button + button{ border-left:1px solid var(--border); }
-  .basemap-ctrl button.active{ background:var(--accent); color:#08131c; font-weight:600; }
+  .basemap-ctrl button.active{ background:var(--accent); color:#063a3a; font-weight:600; }
 
   /* --- Mobile responsive: sidebar and details become off-canvas drawers --- */
   @media (max-width: 860px){
@@ -2295,7 +2295,7 @@
     #sections.open{ transform:translateX(0); }
     .drawer-backdrop{
       display:none;
-      position:fixed; inset:0; background:rgba(4,8,12,0.55);
+      position:fixed; inset:0; background:rgba(0,26,26,0.55);
       z-index:1400;
     }
     .drawer-backdrop.open{ display:block; }
@@ -2401,8 +2401,8 @@
   <div id="map">
     <svg id="northArrow" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <title>Trascina per ruotare la mappa</title>
-      <circle cx="50" cy="50" r="46" fill="rgba(13,51,70,0.85)" stroke="#5cb3d9" stroke-width="2"/>
-      <polygon points="50,10 60,55 50,46 40,55" fill="#5cb3d9"/>
+      <circle cx="50" cy="50" r="46" fill="rgba(0,106,106,0.85)" stroke="#b3cbcb" stroke-width="2"/>
+      <polygon points="50,10 60,55 50,46 40,55" fill="#b3cbcb"/>
       <polygon points="50,90 60,55 50,64 40,55" fill="#eef3f1"/>
       <text x="50" y="24" text-anchor="middle" font-size="13" font-weight="700" fill="#eef3f1" font-family="sans-serif">N</text>
     </svg>
